@@ -1,0 +1,12 @@
+{
+  "domain": "toto_washlet_ir",
+  "name": "Toto Washlet IR",
+  "codeowners": ["@alvinchen1"],
+  "config_flow": true,
+  "dependencies": ["infrared"],
+  "documentation": "https://github.com/alvinchen1/totowashletir",
+  "integration_type": "device",
+  "iot_class": "assumed_state",
+  "requirements": ["infrared-protocols==10.1.0"],
+  "version": "1.0.0"
+}

@@ -1,0 +1,42 @@
+{
+  "entity": {
+    "button": {
+      "full_flush": {
+        "default": "mdi:chevron-double-down"
+      },
+      "front_cleansing": {
+        "default": "mdi:water"
+      },
+      "light_flush": {
+        "default": "mdi:chevron-down"
+      },
+      "open_close_seat": {
+        "default": "mdi:toilet"
+      },
+      "oscillating_cleansing": {
+        "default": "mdi:autorenew"
+      },
+      "pulsating_cleansing": {
+        "default": "mdi:waveform"
+      },
+      "rear_cleansing": {
+        "default": "mdi:water"
+      },
+      "rear_soft_cleansing": {
+        "default": "mdi:water-outline"
+      },
+      "stop": {
+        "default": "mdi:stop"
+      },
+      "warm_air_drying": {
+        "default": "mdi:weather-dust"
+      },
+      "wand_clean": {
+        "default": "mdi:spray-bottle"
+      },
+      "wide_front_cleansing": {
+        "default": "mdi:water-outline"
+      }
+    }
+  }
+}
