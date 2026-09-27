@@ -5,7 +5,7 @@
         "title": "Toto Washlet IR Setup",
         "description": "Select the infrared emitter device that will send commands to your Toto Washlet.\n\n{info}",
         "data": {
-          "infrared_emitter_entity_id": "Infrared emitter"
+          "infrared_emitter_entity_id": "Select the infrared transmitter closest to the Toto Washlet"
         }
       }
     },
