@@ -27,14 +27,20 @@ class TotoWashletIRConfigFlow(ConfigFlow, domain=DOMAIN):
         if not emitter_entity_ids:
             return self.async_abort(reason="no_emitters")
 
+        errors = {}
+
         if user_input is not None:
-            emitter_entity_id = user_input[CONF_INFRARED_EMITTER_ENTITY_ID]
-            await self.async_set_unique_id(emitter_entity_id)
-            self._abort_if_unique_id_configured()
-            return self.async_create_entry(
-                title="Toto Washlet",
-                data=user_input,
-            )
+            emitter_entity_id = user_input.get(CONF_INFRARED_EMITTER_ENTITY_ID)
+
+            if not emitter_entity_id:
+                errors["base"] = "invalid_emitter"
+            else:
+                await self.async_set_unique_id(emitter_entity_id)
+                self._abort_if_unique_id_configured()
+                return self.async_create_entry(
+                    title="Toto Washlet",
+                    data=user_input,
+                )
 
         return self.async_show_form(
             step_id="user",
@@ -48,4 +54,8 @@ class TotoWashletIRConfigFlow(ConfigFlow, domain=DOMAIN):
                     )
                 }
             ),
+            errors=errors,
+            description_placeholders={
+                "info": "Select the infrared emitter device that will send commands to your Toto Washlet."
+            },
         )

@@ -2,12 +2,15 @@
   "config": {
     "step": {
       "user": {
-        "title": "Set up Toto Washlet IR",
-        "description": "Choose the infrared emitter to use for sending commands.",
+        "title": "Toto Washlet IR Setup",
+        "description": "Select the infrared emitter device that will send commands to your Toto Washlet.\n\n{info}",
         "data": {
-          "infrared_emitter_entity_id": "Infrared transmitter"
+          "infrared_emitter_entity_id": "Infrared emitter"
         }
       }
+    },
+    "error": {
+      "invalid_emitter": "Please select a valid infrared emitter device."
     },
     "abort": {
       "already_configured": "This infrared transmitter is already configured to control a Washlet.",
