@@ -13,8 +13,6 @@ emitter.
 
 This integration does not connect to a Washlet or report its state. IR is
 one-way, so button presses do not confirm that the Washlet received a command.
-Compatibility is limited to Washlet models that respond to the IR codes in the
-supplied ESPHome YAML.
 
 ## Install with HACS
 
@@ -38,14 +36,7 @@ The integration creates buttons for:
 - Oscillating cleansing and Pulsating cleansing
 - Wand clean
 
-Commands that consist of multiple IR transmissions are sent in sequence.
-Transmission counts follow the attached ESPHome YAML.
-
-## Icons
-
-Each button has a generic Material Design Icon placeholder in
-`custom_components/toto_washlet_ir/icons.json`. Replace those values with Toto
-artwork when available.
+Commands that consist of multiple IR transmissions are sent in sequence.  Features on your model may vary.
 
 ## Compatibility
 
